@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Market Basket Analysis</title>
+</head>
+<body>
+    <h1>Market Basket Analysis</h1>
+    <form id="analysisForm">
+        <label for="minSupport">Minimum Support:</label>
+        <input type="text" id="minSupport" name="minSupport" required><br>
+        
+        <label for="minConfidence">Minimum Confidence:</label>
+        <input type="text" id="minConfidence" name="minConfidence" required><br>
+        
+        <button type="button" onclick="performMarketBasketAnalysis()">Analyze</button>
+    </form>
+    
+    <div id="results">
+        <!-- Display analysis results here -->
+    </div>
+    
+    <script>
+        function performMarketBasketAnalysis() {
+            const minSupport = document.getElementById('minSupport').value;
+            const minConfidence = document.getElementById('minConfidence').value;
+            
+            // Use JavaScript to send these parameters to the server for analysis
+            // You can use fetch() or another method to make an AJAX request to the server
+        }
+    </script>
+</body>
+</html>
